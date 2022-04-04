@@ -14,4 +14,3 @@ os.system("apt-get install docker-ce docker-ce-cli containerd.io")
 os.system("echo Gracias por utilizar este script! cualquier consulta, dirigirse a https://github.com/HipsDestroyerFTW/")
 os.system("exit")
 
-//
