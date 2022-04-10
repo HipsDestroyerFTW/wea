@@ -1,6 +1,6 @@
 import os
 
-os.system('apt update')
+os.system('sudo apt update')
 os.system('apt install -y debian-keyring debian-archive-keyring apt-transport-https')
 os.system('curl -1sLf https://dl.cloudsmith.io/public/caddy/stable/gpg.key')
 os.system('tee /etc/apt/trusted.gpg.d/caddy-stable.asc')
