@@ -1,11 +1,11 @@
 import os
 
-os.system('sudo apt update')
+os.system('apt update')
 os.system('apt install -y debian-keyring debian-archive-keyring apt-transport-https')
 os.system('curl -1sLf https://dl.cloudsmith.io/public/caddy/stable/gpg.key')
 os.system('tee /etc/apt/trusted.gpg.d/caddy-stable.asc')
 os.system('curl -1sLf https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt')
-os.system('sudo tee /etc/apt/sources.list.d/caddy-stable.list')
+os.system('tee /etc/apt/sources.list.d/caddy-stable.list')
 os.system('apt update')
 os.system('apt install -y caddy')
 
