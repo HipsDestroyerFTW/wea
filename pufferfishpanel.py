@@ -2,6 +2,7 @@ import os
 
 os.system('sudo apt update')
 os.system('sudo apt-get install docker')
+os.system('sudo apt-get install docker.io')
 os.system('sudo su')
 os.system('mkdir -p /var/lib/pufferpanel')
 os.system('docker volume create pufferpanel-config')
