@@ -5,9 +5,6 @@ os.system('sudo apt install software-properties-common')
 os.system('sudo apt-add-repository universe')
 os.system('sudo apt install -y openssl curl nginx mysql-client mysql-server php-fpm php-cli php-curl php-mysql')
 
-## making sure we have a sudo password for mysql
-os.system('sudo mysql_secure_installation')
-
 ## Download of git, curl and pufferpanel, also the install itself
 os.system('sudo mkdir -p /srv && cd /srv')
 os.system('sudo apt install git')
